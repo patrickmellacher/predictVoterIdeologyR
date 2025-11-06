@@ -1,19 +1,23 @@
 Package: predictVoterIdeologyR
 Type: Package
-Title: Fast Soft-Vote Predictions for Voter Ideology Models (scikit-learn Random Forests)
+Title: Predicting the Voter Ideology of Survey Respondents based on Random Forest Classification Models
 Version: 0.1.0
-Author: Philipp Mellacher
-Maintainer: Philipp Mellacher <you@example.com>
-Description: 
-  Provides a fast, pure-R implementation of scikit-learn RandomForest
-  soft-vote predictions from JSON exports (including StandardScaler parameters).
-  Includes helpers to add three ideology predictions (lrgen, lrecon, galtan)
-  to a data frame. Parallel tree evaluation supported on Windows.
+Authors@R: c(
+person("Patrick", "Mellacher", role = c("aut", "cre")),
+person("Gernot", "Lechner", role = "aut")
+)
+Description: This package reproduces the random forest classification framework developed in "Objectifying the Measurement of Voter Ideology With Expert Data" (Mellacher and Lechner, 2025) 
+in R with a high accuracy (>98%) compared to the original Python implementation.
+
+The package contains a function that takes a dataframe containing 6 key independent variables as input and returns the predicted position of the respondent on three ideology scales: 
+general left-right, economic left-right and GAL-TAN (Green/Alternative/Libertarian - Traditional/Authoritarian/Nationalist.
+
+Depends:
+R (>= 4.2.0)
 License: MIT
 Encoding: UTF-8
-LazyData: true
 Imports:
     jsonlite,
-    parallel
+    stats
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
