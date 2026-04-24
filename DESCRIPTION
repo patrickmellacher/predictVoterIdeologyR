@@ -14,17 +14,16 @@ Authors@R: c(
         family = "Lechner",
         role = "aut"
     )
-)
+    )
 Description: Reproduces in R the random forest classification framework
     developed in "Objectifying the Measurement of Voter Ideology With Expert
     Data" (Mellacher and Lechner, 2025). The package provides a pure R
-    implementation of the exported Python/scikit-learn models and achieves
-    high agreement, greater than 98 percent, with the original Python
+    implementation of exported Python/scikit-learn random forest models and
+    achieves high agreement, greater than 98 percent, with the original Python
     implementation. The main function takes a data frame containing six key
     independent variables as input and returns predicted respondent positions
     on three ideology scales: general left-right, economic left-right, and
-    GAL-TAN (Green/Alternative/Libertarian versus
-    Traditional/Authoritarian/Nationalist).
+    GAL-TAN.
 Depends:
     R (>= 4.2.0)
 License: MIT
