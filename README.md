@@ -21,5 +21,5 @@ EES_2014[EES_2014$immigration < 0, ]$immigration <- NA
 EES_2014$immigrate_policy <- 10 - EES_2014$immigration #this question is reverse-coded in the EES dataset
 EES_2014$environment <- EES_2014$qpp17_8
 
-# df: data frame containing all required variables
+#df: data frame containing all required variables
 EES_2014_incl_prediction <- predict_voter_ideology(df = EES_2014)
