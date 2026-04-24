@@ -1,9 +1,11 @@
 #Here's an example R code to predict voter positions in the 2014 EES dataset (assuming you have downloaded ZA5160_v4-1-0.dta from the GESIS website)
 
 library(haven)
+
 EES_2014 <- read_stata("ZA5160_v4-1-0.dta")
 
 install.packages("remotes")  # if not installed yet
+
 remotes::install_github("patrickmellacher/predictVoterIdeologyR")
 
 library(predictVoterIdeologyR)
